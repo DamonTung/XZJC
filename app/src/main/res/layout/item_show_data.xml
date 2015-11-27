@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     android:id="@+id/item_tag">
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dip">
+        android:paddingLeft="8dip"
+        android:paddingRight="8dip"
+        android:paddingTop="8dip">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:id="@+id/show_data_text"
             android:padding="6dp"
+            android:gravity="left"
             >
             <TextView
                 android:layout_width="wrap_content"
@@ -34,14 +37,15 @@
             android:id="@+id/data"
             android:textSize="35dip"
             android:text="50"
-
+            android:paddingLeft="10dp"
             android:layout_alignParentRight="true"
             />
     </RelativeLayout>
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="10dip"
+        android:layout_height="6dip"
         android:background="@drawable/red"
         android:paddingLeft="6dp"
-        android:paddingRight="6dp"/>
+        android:paddingRight="6dp"
+        android:id="@+id/item_color_tag"/>
 </LinearLayout>
